@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>
+            Ivan Yura Takano
+        </title>
+        <meta name="description" content="Projeto 1 HTML CSS" />
+        <meta name="author" content="Ivan Takano" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/22aa4b28c8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+
+    </head>
+
+    <body>
+        <header>
+           <div>
+               <h2>Ivan Y. Takano</h2>
+           </div>
+           <div class="simb">
+            <ul>
+               <li>                
+                   <a target="_blank" href="https://github.com/IvanTakano">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2JI2vOci19Fp31kYy9xyAitUTjUXxkVHBw&usqp=CAU"
+                        alt="Github" title="Github"/>
+                   </a>
+               </li>
+               <li>
+                   <a target="_blank" href="mailto:ivanyurat@gmail.com">
+                       <img src="https://img.olhardigital.com.br/wp-content/uploads/2021/02/Gmail-new-logo.jpg" 
+                       alt="E-mail" title="E-mail">
+                   </a>
+               </li>
+               <li>
+                   <a target="_blank" href="https://wa.me/5511998959430">
+                       <img src="https://www.kyonoandre.com.br/new/wp-content/uploads/2020/02/4705398-whatsapp-logo-download-whatsapp-png-download-670503-free-whatsapp-logo-png-900_520_preview.jpg" 
+                       alt="Whastapp" title="Whatsapp">
+                   </a>
+               </li>
+            </ul>
+        </div>
+        </header>        
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Ivan Takano</h1>
+                    <h5>Full Developer</h5>
+                </div>
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-caret-down"></i>
+                </div>
+                <div style="display: none;" id="about">
+                    <p>
+                        Sobre ..
+                    </p>
+                </div>
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Deixe seu e-mail!!!">
+                        <button>Enviar!</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function displayAbout(){
+                var arrow = document.getElementById("animation");
+                arrow.classList.toggle("rotate");
+                var display = document.getElementById("about");
+                display.classList.toggle("active");
+            }
+        </script>
+    </body>
+
+</html>

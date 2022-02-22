@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ccc;
+    font-family: 'Satisfy', cursive;
+}
+
+ul{
+    list-style: none;    
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 10px ridge #ccc;    
+}
+
+main{
+    padding: 200px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+
+}
+
+header ul li a{
+    transition: 300ms;/* transição e o velocidade */
+}
+
+header ul li a:hover{
+    border: 1px solid #ccc;
+}
+
+.simb img{
+    width: 60px;
+    height: 40px;    
+}
+
+body{
+    background: url(imagens/fundo.jpeg) no-repeat center center fixed;/* sempre utiliza url para inserir uma imagem mesmo a imagem estando no pc */
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 60px;
+}
+
+.container .name h5{
+    font-size: 25px;
+}
+
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    border: thick double #ccc;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 60%;  
+    color: black;
+}
+.form button{
+    width: 60px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(117, 153, 227, 0.66) 50%, silver 50%);/* realizar a transição de cor do botão de uma cor para outra */
+    background-size: 200% 100%;
+    background-position: right bottom;/* Posição inicial da cor inicial */
+    color: black;
+    border: none;
+    transition: all 300ms ease-out;
+}
+
+.form button:hover{/* hover para realizar transição */
+    background-position: left bottom;    
+}
+
+@media only screen and (max-width: 820px){
+    .form{
+        width: 100%;        
+    }
+}
+
+@media only screen and (max-width: 375px){
+    main{
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    .form{
+        width: 300px;     
+        padding: 0;        
+    }
+}
+
+@media only screen and (max-width: 280px){
+    
+    .simb img{
+        width: 40px;
+        height: 30px;    
+    }
+
+    .container .name h1{
+        font-size: 40px;
+    }
+    
+    .container .name h5{
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .form{
+        width: 100%;        
+    }
+}
